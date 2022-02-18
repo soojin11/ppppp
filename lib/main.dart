@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:stack/pluto_grid.dart';
 import 'package:stack/stack.dart';
+import 'package:stack/vehicle/vehicle_page.dart';
+import 'package:stack/vehicle/vehicle_table.dart';
 
 import 'calendar.dart';
 import 'editable/editable.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PlutoGrid2(),
+      home: VehiclePage(),
     );
   }
 }
