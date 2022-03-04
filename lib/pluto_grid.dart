@@ -13,15 +13,23 @@ class PlutoGrid2 extends StatelessWidget {
         ),
         body: Pluto(
           columns: [
-            PlutoColumn(title: "기사", field: "0", type: PlutoColumnType.text()),
-            PlutoColumn(title: "수거량", field: "1", type: PlutoColumnType.text()),
+            PlutoColumn(
+                title: "기사",
+                field: "0",
+                type: PlutoColumnType.text(),
+                enableRowChecked: true),
+            PlutoColumn(
+                title: "수거량",
+                field: "1",
+                type: PlutoColumnType.text(),
+                enableRowChecked: true),
           ],
           rows: List.generate(
               10,
               (index) => PlutoRow(cells: {
                     '0': PlutoCell(value: '심청'),
-                    '1': PlutoCell(value: '14897923')
-                  })),
+                    '1': PlutoCell(value: '14897923'),
+                  }, checked: true)),
         ));
   }
 }

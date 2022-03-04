@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stack/listview.dart';
 import 'package:stack/pluto_grid.dart';
 import 'package:stack/stack.dart';
 import 'package:stack/vehicle/vehicle_page.dart';
@@ -18,10 +19,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: VehiclePage(),
+      home: PlutoGrid2(),
     );
   }
 }
