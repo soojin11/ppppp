@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:intl/intl.dart';
 
+import 'main.dart';
+
 class Calendar extends StatelessWidget {
   const Calendar({Key? key}) : super(key: key);
 
@@ -32,6 +34,11 @@ class Calendar extends StatelessWidget {
       ),
       body: Column(
         children: [
+          SizedBox(
+            width: 300,
+            height: 300,
+            child: GetBtn(),
+          ),
           Center(
               child: IconButton(
                   onPressed: () {}, icon: Icon(Icons.calendar_today_outlined))),

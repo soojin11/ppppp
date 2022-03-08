@@ -81,6 +81,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  get:
+    dependency: "direct main"
+    description:
+      name: get
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.6.1"
   intl:
     dependency: transitive
     description:
@@ -133,9 +140,11 @@ packages:
   pluto_grid:
     dependency: "direct main"
     description:
-      name: pluto_grid
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: c5000f385e130610954e8a3d9b39ba08be9e2b9f
+      url: "https://github.com/soojin11/pluto_grid.git"
+    source: git
     version: "2.9.2"
   rxdart:
     dependency: transitive

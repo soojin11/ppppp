@@ -36,6 +36,9 @@ dependencies:
   syncfusion_flutter_datepicker:
   editable:
   pluto_grid:
+    git:
+      url: https://github.com/soojin11/pluto_grid.git
+  get:
 
 dev_dependencies:
   flutter_test:
